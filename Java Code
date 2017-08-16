@@ -1,0 +1,17 @@
+/**
+ * Created by cjb on 16/08/2017.
+ */
+public class T2 {
+    /*Caso 2 Passagem por Referencia*/
+    static int metodo_teste(int a[]){
+        a[1] = 10;
+        return (a[0] + a[1] + a[2]);
+    }
+
+    public static void main(String[]args){
+        int v[] = { 1, 2, 3 };
+        System.out.println("Array Antes = " + v[0] + "," +v[1] + "," + v[2]);
+        System.out.println("Soma = " + metodo_teste(v));
+        System.out.println("Array Antes = " + v[0] + "," + v[1] + "," + v[2]);
+    }
+}
